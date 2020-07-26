@@ -1,6 +1,6 @@
 /*tabel*/
 
-  $('#extent_tbl1, .mytabvle').DataTable();
+// $('#extent_tbl1, .mytabvle').DataTable();
 
 /*tabel close*/
 
