@@ -992,6 +992,10 @@ a:hover, a:focus{
 }
 .massp{
   border-top: 5px solid #ff156e;
+  background: #f1f1f1;
+}
+.massp iframe{
+  opacity: 0.8;
 }
 
 /*owl gallery slider*/
@@ -1093,6 +1097,13 @@ border: 2px solid #ff156e;
   overflow: hidden;
   padding: 15px;
 }*/
+.img_us_contt {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+  margin-bottom: 20px;
+}
 /*media start*/
 
 @media(max-width: 991px){
