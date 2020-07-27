@@ -1,80 +1,77 @@
 
 /*start*/
 @font-face {
-    font-family: 'MaisR';
-    src: url('../fonts/MaisonNeueExtended-Book.otf') format('opentype');
+  font-family: 'MaisR';
+  src: url('../fonts/MaisonNeueExtended-Book.otf') format('opentype');
 }
 
 @font-face {
-    font-family: 'MaisM';
-    src: url('../fonts/MaisonNeueExtended-Medium.otf') format('opentype');
+  font-family: 'MaisM';
+  src: url('../fonts/MaisonNeueExtended-Medium.otf') format('opentype');
 }
 
 @font-face {
-    font-family: 'MaisT';
-    src: url('../fonts/MaisonNeueExtended-Thin.otf') format('opentype');
+  font-family: 'MaisT';
+  src: url('../fonts/MaisonNeueExtended-Thin.otf') format('opentype');
 }
 
 @font-face {
-    font-family: 'MaisB';
-    src: url('../fonts/MaisonNeueExtended-Bold.otf') format('opentype');
+  font-family: 'MaisB';
+  src: url('../fonts/MaisonNeueExtended-Bold.otf') format('opentype');
 }
 
 
 @font-face {
-    font-family: 'MaisBL';
-    src: url('../fonts/MaisonNeueExtended-Black.otf') format('opentype');
+  font-family: 'MaisBL';
+  src: url('../fonts/MaisonNeueExtended-Black.otf') format('opentype');
 }
 
 @font-face {
-    font-family: 'LatoR';
-    src: url('../fonts/Lato-Regular.ttf') format('truetype');
+  font-family: 'LatoR';
+  src: url('../fonts/Lato-Regular.ttf') format('truetype');
 }
-
-
-
 
  body{
-     font-family: 'LatoR';
-     line-height: 1.4;
-     font-size: 15px;
-     color: #333;
-     overflow-x: hidden;
+  font-family: 'LatoR';
+  line-height: 1.4;
+  font-size: 15px;
+  color: #333;
+  overflow-x: hidden;
 }
 /*start*/
 /*custom*/
 
-a {
-    color: #ff156e;
-    text-decoration: none;
+a{
+  color: #ff156e;
+  text-decoration: none;
 }
 label{
-     font-weight: normal;
-     color: #666;
+  font-weight: normal;
+  color: #666;
 }
 a:hover, a:focus{
-    color: #ff156e;
-     text-decoration: none;
+  color: #ff156e;
+  text-decoration: none;
 }
  .container-fluid {
-     padding: 0 15px;
+  padding: 0 15px;
 }
  .img_r{
-     max-width: 100%;
-     max-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
  .ul_set{
-     list-style: none;
-     padding: 0;
-     margin:0;
+  list-style: none;
+  padding: 0;
+  margin:0;
 }
 
  h1,h2,h3,h4,h5,h6,p{
-     margin-top: 0;
-     font-weight: normal;
+  margin-top: 0;
+  font-weight: normal;
 }
 .btn{
-	font-family: "MaisR";
+  font-family: "MaisR";
 }
 .btn_theme{
   background-image: -webkit-linear-gradient(to right, #ff156e, #ff4d53);
@@ -91,13 +88,13 @@ a:hover, a:focus{
 .btn_theme:active
 
 {
-    background-image: -webkit-linear-gradient(to right, #ff156e, #ff4d53);
+  background-image: -webkit-linear-gradient(to right, #ff156e, #ff4d53);
   background-image: -moz-linear-gradient(to right, #ff156e, #ff4d53);
   background-image: -o-linear-gradient(to right, #ff156e, #ff4d53);
   background-image: -ms-linear-gradient(to right, #ff156e, #ff4d53);
   background-image: linear-gradient(to right, #ff156e, #ff4d53);
   color: #fff;
-   box-shadow: 0px 5px 15px rgba(255, 21, 110, 0.5);
+  box-shadow: 0px 5px 15px rgba(255, 21, 110, 0.5);
 }
 .form-control {
   box-shadow: none !important;
@@ -134,31 +131,31 @@ a:hover, a:focus{
 	right: 0;
 }*/
 .logo_m img{
-    height: 60px;
-    min-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+  height: 60px;
+  min-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 .main_nav .navbar-default{
   background:transparent;
-     position: relative;
-   z-index: 999;
-    border: none;
-    margin: 0;
-    border-radius: 0;
+  position: relative;
+  z-index: 999;
+  border: none;
+  margin: 0;
+  border-radius: 0;
 }
 .main_nav .navbar-brand{
   padding-top: 5px;
   padding-bottom: 5px;
 }
 .main_nav .navbar-default .navbar-nav > li > a{
-    padding:30px 15px;
-    color: #36485d;
-    font-size: 15px;
-    font-family: "MaisR";
-    text-transform: uppercase;
-    transition:all ease-in-out 0.5s;
-    position: relative;
+  padding:30px 15px;
+  color: #36485d;
+  font-size: 15px;
+  font-family: "MaisR";
+  text-transform: uppercase;
+  transition:all ease-in-out 0.5s;
+  position: relative;
 }
 .main_nav .navbar-default .navbar-nav > li > a::after {
   position: absolute;
