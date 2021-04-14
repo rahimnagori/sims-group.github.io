@@ -87,6 +87,16 @@ class Home extends CI_Controller {
     $pageData = $this->get_userdata();
     $this->load->view('site/fire_details', $pageData);
   }
+
+  public function about(){
+    $pageData = $this->get_userdata();
+    $this->load->view('site/about_us', $pageData);
+  }
+
+  public function services(){
+    $pageData = $this->get_userdata();
+    $this->load->view('site/services', $pageData);
+  }
   /* No need below this */
 
   public function community(){
@@ -341,16 +351,6 @@ class Home extends CI_Controller {
   public function profile(){
     $pageData = $this->get_userdata();
     $this->load->view('site/myprofile', $pageData);
-  }
-
-  public function about(){
-    $pageData = $this->get_userdata();
-    $this->load->view('site/about_us', $pageData);
-  }
-
-  public function service(){
-    $pageData = $this->get_userdata();
-    $this->load->view('site/service', $pageData);
   }
 
   public function partner(){

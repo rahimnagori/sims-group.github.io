@@ -60,15 +60,15 @@
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>
                </button>
-               <a class="navbar-brand logo_m" href="">
+               <a class="navbar-brand logo_m" href="<?=site_url();?>">
                <img src="<?=site_url('assets/site/img/');?>logo_sims.png">
                </a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                <ul class="nav navbar-nav navbar-right">
-                  <li><a href="">Home</a></li>
-                  <li><a href="#about_us">About Us</a></li>
-                  <li><a href="#services">Services</a></li>
+                  <li><a href="<?=site_url();?>">Home</a></li>
+                  <li><a href="<?=site_url('About');?>">About Us</a></li>
+                  <li><a href="<?=site_url('Services');?>">Services</a></li>
                   <li><a href="<?=site_url('Contact');?>">Contact Us</a></li>
                </ul>
             </div>

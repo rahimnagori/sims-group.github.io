@@ -36,7 +36,7 @@
     <div class="row">
       <div class="col-sm-6 col-sm-offset-3">
         <div class="logoo_admin">
-          <img src="<?=site_url('assets/site/images/logo2.png');?>" >
+          <img src="<?=site_url('assets/site/img/logo_sims.png');?>" >
         </div>
       <div class="login-box">
           <?=$this->session->flashdata('responseMessage');?>
@@ -86,10 +86,8 @@
            </div>
             <div class="form-group text-center">
               <button type="submit" class="btn btn-primary submit-btn btn-lg" name="submit" value="submit">Submit</button>
-            
             </div>
           </form>
-          
         </div>
       </div>
       </div>

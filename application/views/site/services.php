@@ -1,478 +1,333 @@
+<?php include_once('include/header.php'); ?>
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SIMS</title>
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-    <link href="css/jquery.dataTables.min.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <!-- Favicon -->
-  </head>
-  <body>
-  
-<div class="topbar">
-  <div class="container">
-    <div class="mox_us">
-      <div class="pull-left">
-        <ul class="ul_set">
-          <li><a href="#"><i class="fa fa-envelope"></i> Infosimsdelhi@gmail.com</a></li>
-          <li><a href="#"><i class="fa fa-phone"></i> +91 9319313401</a></li>
-        </ul>
-      </div>
-      <div class="pull-right">
-        <ul class="ul_set">
-          <li><a href="#"><i class="fa fa-globe"></i> https://simsgroup.co.in/</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div> 
-<header>
- <div class="main_nav">
-
-   <nav class="navbar navbar-default">
-
-  <div class="container">
-
-    <div class="navbar-header">
-
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-
-        <span class="sr-only">Toggle navigation</span>
-
-        <span class="icon-bar"></span>
-
-        <span class="icon-bar"></span>
-
-        <span class="icon-bar"></span>
-
-      </button>
-
-      <a class="navbar-brand logo_m" href="index.html">
-
-        <img src="img/logo_sims.png">
-
-      </a>
-
-    </div>
-
-
-
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-      
-
-      <ul class="nav navbar-nav navbar-right">
-           <li><a href="index.html">Home</a></li>
-            <li><a href="index.html">About Us</a></li>
-            <li><a href="index.html">Services</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-      </ul>     
-
-    </div>
-
-  </div>
-
-</nav>
-
- </div>
-</header>
-<div class="innerer_banner">
-  <div class="container">
-    <div class="box_us16">
-      <h1>Our services</h1>
-      
-    </div>
-  </div>
-</div>
-<section class="pad_top sec1">
+<section class="pad_top sec1" id="services">
   <div class="container">
     <div class="headding wow fadeInDown"  data-wow-delay="0.5s">
-        <h1>Repairing and services</h1>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          <br> industry's standard dummy text ever since Lorem Ipsum.
-        </p>
+      <h1>Services</h1>
+      <p>
+        Providing top quality services to our trust worthy customers is our topmost priority.
+        <br>
+        We at SIMS group believe in the customer satisfaction.
+      </p>
+    </div>
+    <div class="slidder2 wow fadeInLeft"  data-wow-delay="0.7s">
+      <div class="owl-carousel owl-theme slider_arrrw" id="slider_galler2">
+        <div class="item">
+          <div class="box_us3">
+            <img src="<?=site_url('assets/site/img/');?>covid19.jpg">
+            <div class="box_us4">
+              <h4>Covid 19 Products</h4>
+              <p>
+                PPE Kit | Gloves | Masks | Sanitizers
+              </p>
+              <div class="red_more2">
+                <a href="Covid-Details" class="btn btn_theme">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box_us3">
+            <img src="<?=site_url('assets/site/img/');?>electrical.jpg">
+            <div class="box_us4">
+              <h4>Electrical work</h4>
+              <p>
+                We deals in Electrical Contracts and able to provide all the latest technologies and higher standard works.
+              </p>
+              <div class="red_more2">
+                <a href="Electrical-Details" class="btn btn_theme">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box_us3">
+            <img src="<?=site_url('assets/site/img/');?>transformer.jpg">
+            <div class="box_us4">
+              <h4>Transformer Servicing</h4>
+              <p>
+                We deals in all types of transformer service on site. We do provide all type of transformer testing. 
+              </p>
+              <div class="red_more2">
+                <a href="<?=site_url();?>Transformer-Details" class="btn btn_theme">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box_us3">
+            <img src="<?=site_url('assets/site/img/');?>panel.jpg">
+            <div class="box_us4">
+              <h4>HT & LT Panel</h4>
+              <p>
+                We deals in all type of HT & LT breaker on site service. Also we can take care of calibration with Transformer too.
+              </p>
+              <div class="red_more2">
+                <a href="<?=site_url();?>Panel-Details" class="btn btn_theme">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box_us3">
+            <img src="<?=site_url('assets/site/img/');?>chair.jpg">
+            <div class="box_us4">
+              <h4>New Chair & Repairing Service</h4>
+              <p>
+                We deals in all type of LT breaker on site service.
+              </p>
+              <div class="red_more2">
+                <a href="<?=site_url();?>Furniture-Details" class="btn btn_theme">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box_us3">
+            <img src="<?=site_url('assets/site/img/');?>carpenter.jpg">
+            <div class="box_us4">
+              <h4>Carpenter Service</h4>
+              <p>
+                We deals in all type of carpenter work at Industries, Corporate office and client's home.
+              </p>
+              <div class="red_more2">
+                <a href="<?=site_url();?>Carpenter-Details" class="btn btn_theme">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box_us3">
+            <img src="<?=site_url('assets/site/img/');?>fire.png">
+            <div class="box_us4">
+              <h4>Fire Extinguisher</h4>
+              <p>
+                We deals in different types of Fire Extinguishers.
+              </p>
+              <div class="red_more2">
+                <a href="<?=site_url();?>Fire-Details" class="btn btn_theme">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="slidder2 wow fadeInLeft"  data-wow-delay="0.7s">
-             <div class="owl-carousel owl-theme slider_arrrw" id="slider_galler2">
-            <div class="item">
-                  <div class="box_us3">
-                        <img src="img/img_2.png">
-                        <div class="box_us4">
-                              <h4>Electrical work</h4>
-                        <p>
-                               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
-                        </p>
-                        <div class="red_more2">
-                              <a href="details.html" class="btn btn_theme">Read More</a>
-                        </div>
-                        </div>
-                  </div>
-            </div>
-            <div class="item">
-                  <div class="box_us3">
-                        <img src="img/img_2.png">
-                        <div class="box_us4">
-                              <h4>Transformer</h4>
-                        <p>
-                               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
-                        </p>
-                         <div class="red_more2">
-                              <a href="details.html" class="btn btn_theme">Read More</a>
-                        </div>
-                        </div>
-                  </div>
-            </div>
-            <div class="item">
-                  <div class="box_us3">
-                        <img src="img/img_2.png">
-                        <div class="box_us4">
-                              <h4>Plumbing Work</h4>
-                        <p>
-                               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
-                        </p>
-                         <div class="red_more2">
-                              <a href="details.html" class="btn btn_theme">Read More</a>
-                        </div>
-                        </div>
-                  </div>
-            </div>
-            <div class="item">
-                  <div class="box_us3">
-                        <img src="img/img_2.png">
-                        <div class="box_us4">
-                              <h4>LT Panel</h4>
-                        <p>
-                               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
-                        </p>
-                         <div class="red_more2">
-                              <a href="details.html" class="btn btn_theme">Read More</a>
-                        </div>
-                        </div>
-                  </div>
-            </div>
-            <div class="item">
-                  <div class="box_us3">
-                        <img src="img/img_2.png">
-                        <div class="box_us4">
-                              <h4>Carpenter work</h4>
-                        <p>
-                               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
-                        </p>
-                         <div class="red_more2">
-                              <a href="details.html" class="btn btn_theme">Read More</a>
-                        </div>
-                        </div>
-                  </div>
-            </div>
-            <div class="item">
-                  <div class="box_us3">
-                        <img src="img/img_2.png">
-                        <div class="box_us4">
-                              <h4>HT Panel</h4>
-                        <p>
-                               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
-                        </p>
-                         <div class="red_more2">
-                              <a href="details.html" class="btn btn_theme">Read More</a>
-                        </div>
-                        </div>
-                  </div>
-            </div>
-            <div class="item">
-                  <div class="box_us3">
-                        <img src="img/img_2.png">
-                        <div class="box_us4">
-                              <h4>Chair work</h4>
-                        <p>
-                               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
-                        </p>
-                         <div class="red_more2">
-                              <a href="details.html" class="btn btn_theme">Read More</a>
-                        </div>
-                        </div>
-                  </div>
-            </div>
-            
-       </div>
-      
+      <div class="red_more">
+        <a href="http://simsgroup.co.in/brochure/SIMS_Services.pdf" class="btn btn_theme btn-lg" download >
+        Download Brochure
+        </a>
+        <a href="http://simsgroup.co.in/brochure/SIMS_Services_2.pdf" class="btn btn_theme btn-lg" download >
+        Download Brochure
+        </a>
       </div>
+      <br/>
+    </div>
   </div>
 </section>
-
-
 <section class="sec_pad sec2">
-      <div class="container">
-            <div class="headding wow fadeInDown"  data-wow-delay="0.5s">
-        <h1>Designing services</h1>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          <br> industry's standard dummy text ever since Lorem Ipsum.
-        </p>
-      </div>
-      <div class="box_us7">
-            <ul>
-    <li class="wow fadeInLeft"  data-wow-delay="0.7s">
-      <a class='normal' href='#'>
-        <img src="img/img_6.png">
-      </a>
-      <div class='info'>
-        <h3>Grid false celling</h3>
-      </div>
-    </li>
-    <li class="wow fadeInLeft"  data-wow-delay="0.8s">
-      <a class='normal' href='#'>
-         <img src="img/img_7.png">
-      </a>
-      <div class='info'>
-        <h3>Gypsum false celling</h3>
-      </div>
-    </li>
-    <li class="wow fadeInLeft"  data-wow-delay="0.9s">
-      <a class='normal' href='#'>
-        <img src="img/img_8.png">
-      </a>
-      <div class='info'>
-        <h3>POP False celling</h3>
-      </div>
-    </li>
-    <li class="wow fadeInLeft"  data-wow-delay="1.0s">
-      <a class='normal' href='#'>
-         <img src="img/img_9.png">
-      </a>
-      <div class='info'>
-        <h3>Paints work</h3>
-      </div>
-    </li>
-   
-  </ul>            
-      </div>
-            
-      </div>
-</section>
-<section class="sec_pad sec4">
-      <div class="container">
-            <div class="headding wow fadeInDown"  data-wow-delay="0.5s">
-        <h1>Cleaning Services</h1>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          <br> industry's standard dummy text ever since Lorem Ipsum.
-        </p>
-      </div>
-      <div class="row">
-            <div class="col-sm-6">
-                  <div class="box_us8 wow fadeInLeft"  data-wow-delay="0.5s">
-                        <img src="img/img_10.png">
-                        <h4>
-                              Facade cleaning
-
-                        </h4>
-                  </div>
-            </div>
-            <div class="col-sm-6">
-                  <div class="box_us9 wow fadeInDown"  data-wow-delay="0.7s">
-                        <img src="img/img_11.png">
-                        <h4>Carpet Cleaning</h4>
-                  </div>
-                  <div class="box_us10 wow fadeInDown"  data-wow-delay="0.8s">
-                        <img src="img/img_9.png">
-                        <h4>Tank Cleaning</h4>
-                  </div>
-            </div>
-      </div>
-      </div>
-</section>
-<section class="sec_pad sec5">
-      <div class="container">
-            <div class="headding fadeInDown"  data-wow-delay="0.5s">
-        <h1>Spray Services</h1>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          <br> industry's standard dummy text ever since Lorem Ipsum.
-        </p>
-      </div>
-      <div class="box_us11 wow bounceInLeft"  data-wow-delay="0.5s">
-            <div class="row">
-            <div class="col-sm-6">
-                  <div class="box_us5">
-                              <img src="img/img_3.png" class="img_r">
-                  </div>
-            </div>
-            <div class="col-sm-6">
-                  <div class="box_us6">
-                              <h3>Sanitization services</h3>
-                              <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-industry's standard dummy text ever since Lorem Ipsum.   </p>
-<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-industry's standard dummy text ever since Lorem Ipsum.   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-industry's standard dummy text ever since Lorem Ipsum. </p>
-                        </div> 
-            </div>
-      </div>
-      </div> 
-      <div class="box_us11 wow bounceInRight"  data-wow-delay="0.7s">
-            <div class="row">
-            <div class="col-sm-6 flor1">
-                  <div class="box_us5">
-                              <img src="img/img_3.png" class="img_r">
-                  </div>
-            </div>
-            <div class="col-sm-6">
-                  <div class="box_us6">
-                              <h3>Sanitization services</h3>
-                              <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-industry's standard dummy text ever since Lorem Ipsum.   </p>
-<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-industry's standard dummy text ever since Lorem Ipsum.   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-industry's standard dummy text ever since Lorem Ipsum. </p>
-                        </div> 
-            </div>
-      </div>
-      </div> 
-      </div>
-</section>
-
-
-
-<footer class="footer wow fadeInLeft"  data-wow-delay="0.5s">
   <div class="container">
-      <div class="row">
-          <div class="col-sm-4">
-              <div class="box_us12">
-                  <div class="icon_2">
-                      <i class="fa fa-envelope"></i>
-                      <h4>Email Address</h4>
-                      <p>
-                          Infosimsdelhi@gmail.com
-                      </p>
-                      <p>
-                          Services@simsgroup.co.in
-                      </p>
-                  </div>
-              </div>
+    <div class="headding wow fadeInDown" data-wow-delay="0.5s">
+      <h1>Interior Services</h1>
+      <p>
+        We provide all types of Interior Decoration services comprises of : 
+        <br>Gypsum False Cealing | Grid | POP | Paint Work etc.
+      </p>
+    </div>
+    <div class="box_us7">
+      <ul>
+        <li class="wow fadeInLeft"  data-wow-delay="0.7s">
+          <a class='normal' href='#'>
+          <img src="<?=site_url('assets/site/img/');?>img_6.png">
+          </a>
+          <div class='info'>
+            <h3>Grid false celling</h3>
           </div>
-          <div class="col-sm-4">
-              <div class="box_us12">
-                  <div class="icon_2">
-                      <i class="fa fa-phone"></i>
-                      <h4>Phone Number</h4>
-                      <p>
-                          +91 9319313401
-                      </p>
-                  </div>
-              </div>
+        </li>
+        <li class="wow fadeInLeft"  data-wow-delay="0.8s">
+          <a class='normal' href='#'>
+          <img src="<?=site_url('assets/site/img/');?>img_7.png">
+          </a>
+          <div class='info'>
+            <h3>Gypsum false celling</h3>
           </div>
-          <div class="col-sm-4">
-              <div class="box_us12">
-                  <div class="icon_2">
-                      <i class="fa fa-map-marker"></i>
-                      <h4>Location</h4>
-                      <p>
-                          First floor satyam shivam sundaram mandir sector 9, Rohini 110085
-                      </p>
-                   
-                  </div>
-              </div>
+        </li>
+        <li class="wow fadeInLeft"  data-wow-delay="0.9s">
+          <a class='normal' href='#'>
+          <img src="<?=site_url('assets/site/img/');?>img_8.png">
+          </a>
+          <div class='info'>
+            <h3>POP False celling</h3>
           </div>
-      </div>
-      <div class="sosilam">
-      <ul class="ul_set">
-        <li><a href="https://www.facebook.com/pg/SIMS-Group-of-company-105106981243155/services/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="https://www.youtube.com/channel/UCZpgIeeQ0AkcD3wqRETyKMA"><i class="fa fa-youtube"></i></a></li>
-        <li><a href="https://www.indiamart.com/shastriinteriormaintenanceservices/"><img src="img/indiamart.png" width="40" ></a></li>
+        </li>
+        <li class="wow fadeInLeft"  data-wow-delay="1.0s">
+          <a class='normal' href='#'>
+          <img src="<?=site_url('assets/site/img/');?>img_9.png">
+          </a>
+          <div class='info'>
+            <h3>Paints work</h3>
+          </div>
+        </li>
       </ul>
     </div>
-      <div class="coppy">
-          Copyright SIMS GROUP 0F COMPANY © 2020. All Rights Reserved. 
-      </div>
   </div>
-</footer>
+</section>
+<section class="sec_pad sec4">
+  <div class="container">
+    <div class="headding wow fadeInDown"  data-wow-delay="0.5s">
+      <h1>Cleaning Services</h1>
+      <p>
+        We provide all types of Clearning services comprises of : 
+        <br>Facade Cleaning | Carpet Cleaning | Tank Cleaning etc.
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="box_us8 wow fadeInLeft"  data-wow-delay="0.5s">
+          <a href="#">
+            <img src="<?=site_url('assets/site/img/');?>img_10.png">
+            <h4>
+              Facade cleaning
+            </h4>
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="box_us9 wow fadeInDown"  data-wow-delay="0.7s">
+          <a href="#">
+            <img src="<?=site_url('assets/site/img/');?>img_11.png">
+            <h4>Carpet Cleaning</h4>
+          </a>
+        </div>
+        <div class="box_us10 wow fadeInDown"  data-wow-delay="0.8s">
+          <a href="#">
+            <img src="<?=site_url('assets/site/img/');?>tank_cleaning.jpg">
+            <h4>Tank Cleaning</h4>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="red_more">
+      <a href="http://simsgroup.co.in/brochure/Tank_Cleaning_Process.pdf" class="btn btn_theme btn-lg" download >
+      Download cleaning brochure
+      </a>
+    </div>
+  </div>
+</section>
+<section class="sec_pad sec5" style="display:none;">
+  <div class="container">
+    <div class="headding fadeInDown"  data-wow-delay="0.5s">
+      <h1>Sanitization Services</h1>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+        <br> industry's standard dummy text ever since Lorem Ipsum.
+      </p>
+    </div>
+    <div class="box_us11 wow bounceInLeft"  data-wow-delay="0.5s">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="box_us5">
+            <img src="<?=site_url('assets/site/img/');?>img_3.png" class="img_r">
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="box_us6">
+            <h3>Sanitization services</h3>
+            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since Lorem Ipsum.   
+            </p>
+            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since Lorem Ipsum.   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since Lorem Ipsum. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box_us11 wow bounceInRight"  data-wow-delay="0.7s">
+      <div class="row">
+        <div class="col-sm-6 flor1">
+          <div class="box_us5">
+            <img src="<?=site_url('assets/site/img/');?>img_3.png" class="img_r">
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="box_us6">
+            <h3>Sanitization services</h3>
+            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since Lorem Ipsum.   
+            </p>
+            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since Lorem Ipsum.   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since Lorem Ipsum. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
-<script type="text/javascript" src="js/owl.carousel.js"></script>
-<script type="text/javascript" src="js/wow.min.js"></script>
-<script type="text/javascript" src="js/custom.js"></script>
-<script type="text/javascript" src="js/typed.min.js"> </script>
+<?php include_once('include/footer.php'); ?>
+
 <script type="text/javascript">
   new WOW().init();
 </script>
-<!-- GetButton.io widget -->
+
 <script type="text/javascript">
-    (function () {
-        var options = {
-            whatsapp: "+91 9319313401", // WhatsApp number
-            call_to_action: "", // Call to action
-            position: "right", // Position may be 'right' or 'left'
-        };
-        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-    })();
+  const nodes = [].slice.call(document.querySelectorAll('li'), 0);
+  const directions  = { 0: 'top', 1: 'right', 2: 'bottom', 3: 'left' };
+  const classNames = ['in', 'out'].map((p) => Object.values(directions).map((d) => `${p}-${d}`)).reduce((a, b) => a.concat(b));
+
+  const getDirectionKey = (ev, node) => {
+    const { width, height, top, left } = node.getBoundingClientRect();
+    const l = ev.pageX - (left + window.pageXOffset);
+    const t = ev.pageY - (top + window.pageYOffset);
+    const x = (l - (width/2) * (width > height ? (height/width) : 1));
+    const y = (t - (height/2) * (height > width ? (width/height) : 1));
+    return Math.round(Math.atan2(y, x) / 1.57079633 + 5) % 4;
+  }
+
+  class Item {
+    constructor(element) {
+      this.element = element;    
+      this.element.addEventListener('mouseover', (ev) => this.update(ev, 'in'));
+      this.element.addEventListener('mouseout', (ev) => this.update(ev, 'out'));
+    }
+    
+    update(ev, prefix) {
+      this.element.classList.remove(...classNames);
+      this.element.classList.add(`${prefix}-${directions[getDirectionKey(ev, this.element)]}`);
+    }
+  }
+
+  nodes.forEach(node => new Item(node));
+  /*hover*/
 </script>
-<!-- /GetButton.io widget -->
- </body>
-</html>
-
 
 <script type="text/javascript">
-  
-/*hover*/
-
-// - Noel Delgado | @pixelia_me
-
-const nodes = [].slice.call(document.querySelectorAll('li'), 0);
-const directions  = { 0: 'top', 1: 'right', 2: 'bottom', 3: 'left' };
-const classNames = ['in', 'out'].map((p) => Object.values(directions).map((d) => `${p}-${d}`)).reduce((a, b) => a.concat(b));
-
-const getDirectionKey = (ev, node) => {
-  const { width, height, top, left } = node.getBoundingClientRect();
-  const l = ev.pageX - (left + window.pageXOffset);
-  const t = ev.pageY - (top + window.pageYOffset);
-  const x = (l - (width/2) * (width > height ? (height/width) : 1));
-  const y = (t - (height/2) * (height > width ? (width/height) : 1));
-  return Math.round(Math.atan2(y, x) / 1.57079633 + 5) % 4;
-}
-
-class Item {
-  constructor(element) {
-    this.element = element;    
-    this.element.addEventListener('mouseover', (ev) => this.update(ev, 'in'));
-    this.element.addEventListener('mouseout', (ev) => this.update(ev, 'out'));
-  }
-  
-  update(ev, prefix) {
-    this.element.classList.remove(...classNames);
-    this.element.classList.add(`${prefix}-${directions[getDirectionKey(ev, this.element)]}`);
-  }
-}
-
-nodes.forEach(node => new Item(node));
-/*hover*/
+  document.addEventListener('DOMContentLoaded', function(){
+    Typed.new('.type', {
+      strings: ["SIMS Group", "SIMS Group", "SIMS Group", "SIMS Group"],
+      stringsElement: null,
+      // typing speed
+      typeSpeed: 100,
+      // time before typing starts
+      startDelay: 600,
+      // backspacing speed
+      backSpeed: 40,
+      // time before backspacing
+      backDelay: 500,
+      // loop
+      loop: true,
+      // false = infinite
+      loopCount: 5,
+      // show cursor
+      showCursor: false,
+      // character for cursor
+      cursorChar: "|",
+      // attribute to type (null == text)
+      attr: null,
+      // either html or text
+      contentType: 'html',
+    });
+  });
 </script>

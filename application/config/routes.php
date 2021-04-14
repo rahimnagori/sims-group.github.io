@@ -62,6 +62,8 @@ $route['Panel-Details'] = 'Home/panel_details';
 $route['Furniture-Details'] = 'Home/furniture_details';
 $route['Carpenter-Details'] = 'Home/carpenter_details';
 $route['Fire-Details'] = 'Home/fire_details';
+$route['About'] = 'Home/about';
+$route['Services'] = 'Home/services';
 
 
 $route['Community'] = 'Home/community';
@@ -76,8 +78,6 @@ $route['Terms'] = 'Home/terms';
 $route['Payment'] = 'Home/payment';
 $route['Tips'] = 'Home/tips';
 $route['Works'] = 'Home/works';
-$route['About'] = 'Home/about';
-$route['Service'] = 'Home/service';
 $route['Partner'] = 'Home/partner';
 $route['Policy'] = 'Home/policy';
 $route['Price'] = 'Home/price';

@@ -1,236 +1,40 @@
+<?php include_once('include/header.php'); ?>
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SIMS</title>
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-    <link href="css/jquery.dataTables.min.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <!-- Favicon -->
-  </head>
-  <body>
-  
-<div class="topbar">
+<section class="sec_pad sec3" id="about_us">
   <div class="container">
-    <div class="mox_us">
-      <div class="pull-left">
-        <ul class="ul_set">
-          <li><a href="#"><i class="fa fa-envelope"></i> Infosimsdelhi@gmail.com</a></li>
-          <li><a href="#"><i class="fa fa-phone"></i> +91 9319313401</a></li>
-        </ul>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="box_us5">
+          <img src="<?=site_url('assets/site/img/');?>logo_sims.png" class="img_r  wow bounceInLeft"  data-wow-delay="0.5s">
+        </div>
       </div>
-      <div class="pull-right">
-        <ul class="ul_set">
-          <li><a href="#"><i class="fa fa-globe"></i> https://simsgroup.co.in/</a></li>
-        </ul>
+      <div class="col-sm-6 wow bounceInRight"  data-wow-delay="0.7s">
+        <div class="box_us6">
+          <h3>About Us</h3>
+          <p>
+            We are working as SIMS Group since 2019 but our proprietor <b>Mrs. Sharma</b> has a huge experience in this field. She is working since 2015 having 5 years of experience.
+            <br/>
+            Engineer Mr. Sharma, who is the main Electrical consultant to SIMS Group having a vast experience in his stream, is currently serving in Delhi NCR.
+            <br/>
+            We at SIMS Group provide following services:
+            <br/>
+            <ul style="color:#ff156e;">
+              <li>Covid 19 Products are the latest addition in our sales section</li>
+              <li>All type of Gypsum Partition (Office, Cabin, Congerence Room etc.)</li>
+              <li>Gypsum False Ceiling</li>
+              <li>Wooden Work</li>
+              <li>Office Chairs</li>
+              <li>Electrical Services</li>
+              <li>Sanitization Work</li>
+              <li>Project Consultant</li>
+              <li>Modular Kitchen Services</li>
+              <li>Fire Extinguisher</li>
+            </ul>
+          </p>
+        </div>
       </div>
     </div>
   </div>
-</div> 
-<header>
- <div class="main_nav">
+</section>
 
-   <nav class="navbar navbar-default">
-
-  <div class="container">
-
-    <div class="navbar-header">
-
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-
-        <span class="sr-only">Toggle navigation</span>
-
-        <span class="icon-bar"></span>
-
-        <span class="icon-bar"></span>
-
-        <span class="icon-bar"></span>
-
-      </button>
-
-      <a class="navbar-brand logo_m" href="index.html">
-
-        <img src="img/logo_sims.png">
-
-      </a>
-
-    </div>
-
-
-
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-      
-
-      <ul class="nav navbar-nav navbar-right">
-           <li><a href="index.html">Home</a></li>
-            <li><a href="index.html">About Us</a></li>
-            <li><a href="index.html">Services</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-      </ul>     
-
-    </div>
-
-  </div>
-
-</nav>
-
- </div>
-</header>
-<div class="innerer_banner">
-	<div class="container">
-		<div class="box_us16">
-			<h1>About Us</h1>
-			
-		</div>
-	</div>
-</div>
-<div class="box_us13 sec_pad">
-	<div class="container">
-		<div class="box_us14">
-			<div class="row">
-                  <div class="col-sm-6">
-                        <div class="box_us5">
-                              <img src="img/img_3.png" class="img_r  wow bounceInLeft"  data-wow-delay="0.5s">
-                        </div>
-                  </div>
-                  <div class="col-sm-6 wow bounceInRight"  data-wow-delay="0.7s">
-                        <div class="box_us6">
-                              <h3>About Us</h3>
-                              <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-industry's standard dummy text ever since Lorem Ipsum.   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-industry's standard dummy text ever since Lorem Ipsum. </p>
-<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-industry's standard dummy text ever since Lorem Ipsum.   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-industry's standard dummy text ever since Lorem Ipsum. </p>
-                        </div>
-                  </div>
-            </div>
-		</div>
-		<div class="box_us15">
-			<h4>What is Lorem Ipsum?</h4>
-			<p>
-				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-			</p>
-			<ul>
-				<li>Lorem Ipsum is simply dummy text of the industry.</li>
-				<li>Lorem Ipsum is simply dummy text.</li>
-				<li>Lorem Ipsum is simply dummy.</li>
-				<li>Lorem Ipsum is simply.</li>
-				<li>Lorem Ipsum is simply dummy text.</li>
-				<li>Lorem Ipsum is simply dummy.</li>
-			</ul>
-			<p>
-				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-			</p>
-		</div>
-	</div>
-</div>
-
-
-<footer class="footer wow fadeInLeft"  data-wow-delay="0.5s">
-  <div class="container">
-      <div class="row">
-          <div class="col-sm-4">
-              <div class="box_us12">
-                  <div class="icon_2">
-                      <i class="fa fa-envelope"></i>
-                      <h4>Email Address</h4>
-                      <p>
-                          Infosimsdelhi@gmail.com
-                      </p>
-                      <p>
-                          Services@simsgroup.co.in
-                      </p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-sm-4">
-              <div class="box_us12">
-                  <div class="icon_2">
-                      <i class="fa fa-phone"></i>
-                      <h4>Phone Number</h4>
-                      <p>
-                          +91 9319313401
-                      </p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-sm-4">
-              <div class="box_us12">
-                  <div class="icon_2">
-                      <i class="fa fa-map-marker"></i>
-                      <h4>Location</h4>
-                      <p>
-                          First floor satyam shivam sundaram mandir sector 9, Rohini 110085
-                      </p>
-                   
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="sosilam">
-      <ul class="ul_set">
-        <li><a href="https://www.facebook.com/pg/SIMS-Group-of-company-105106981243155/services/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="https://www.youtube.com/channel/UCZpgIeeQ0AkcD3wqRETyKMA"><i class="fa fa-youtube"></i></a></li>
-        <li><a href="https://www.indiamart.com/shastriinteriormaintenanceservices/"><img src="img/indiamart.png" width="40" ></a></li>
-      </ul>
-    </div>
-      <div class="coppy">
-          Copyright SIMS GROUP 0F COMPANY © 2020. All Rights Reserved. 
-      </div>
-  </div>
-</footer>
-
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
-<script type="text/javascript" src="js/owl.carousel.js"></script>
-<script type="text/javascript" src="js/wow.min.js"></script>
-<script type="text/javascript" src="js/custom.js"></script>
-<script type="text/javascript" src="js/typed.min.js"> </script>
-<script type="text/javascript">
-  new WOW().init();
-</script>
-<!-- GetButton.io widget -->
-<script type="text/javascript">
-    (function () {
-        var options = {
-            whatsapp: "+91 9319313401", // WhatsApp number
-            call_to_action: "", // Call to action
-            position: "right", // Position may be 'right' or 'left'
-        };
-        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-    })();
-</script>
-<!-- /GetButton.io widget -->
- </body>
-</html>
-
-
+<?php include_once('include/footer.php'); ?>
