@@ -51,7 +51,7 @@
   <header class="main-header">
     <!-- Logo -->
     <a href="<?=base_url('Admin/Dashboard');?>" class="logo">
-      <span class="logo-lg"><b><img style="height: 30px;" src="<?=$BASE_URL; ?>assets/site/images/logo.png"> </b></span>
+      <span class="logo-lg"><b><img style="height: 30px;" src="<?=$BASE_URL; ?>assets/site/img/logo_sims.png"> </b></span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">

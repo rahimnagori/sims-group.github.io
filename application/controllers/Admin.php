@@ -22,6 +22,9 @@ class Admin extends CI_Controller {
   }
 
   public function logout(){
+    $where['id'] = $this->session->userdata('id');
+    $update['is_logged_in'] = 0;
+    $this->Common_Model->update('admins', $where, $update);
     $this->session->sess_destroy();
     return redirect('Admin');
   }
@@ -29,12 +32,18 @@ class Admin extends CI_Controller {
   public function admin_login(){
     $username = trim($this->input->post('email'));
     $password = trim($this->input->post('password'));
-    $usernameLogin = $this->Common_Model->fetch_records('admins', array('email' => $username, 'password' => $password, 'type' => 1), false, true);
+    $where = array('email' => $username, 'password' => $password);
+    $usernameLogin = $this->Common_Model->fetch_records('admins', $where, false, true);
     $userdata = [];
     if($usernameLogin){
       $userdata = $usernameLogin;
     }
     if($userdata){
+      $where['id'] = $userdata['id'];
+      $update['is_logged_in'] = 1;
+      $update['last_login'] = date('Y-m-d H:i:s');
+      // $update['user_id'] = date('Y-m-d H:i:s');
+      $this->Common_Model->update('admins', $where, $update);
       $this->session->set_userdata(array('id' => $userdata['id'], 'is_admin_logged_in' => true));
       $this->session->set_flashdata("responseMessage", "<div class='alert alert-success alert-dismissible' role='alert'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a><strong>Success!</strong> Login successfully.</div>");
       return redirect('Admin/Dashboard');

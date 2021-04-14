@@ -17,7 +17,8 @@ class Admin_Dashboard extends CI_Controller {
     $where['id'] = $admin_id;
     $adminData = $this->Common_Model->fetch_records('admins', $where, false, true);
     $pageData['adminData'] = $adminData;
-    $users = $this->Common_Model->fetch_records('users');
+    // $users = $this->Common_Model->fetch_records('users');
+    $users = [];
     $pageData['totalUsers'] = count($users);
 
     $this->load->view('admin/dashboard', $pageData);
