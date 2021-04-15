@@ -93,6 +93,9 @@ $route['Logout'] = 'Users/logout';
 /* Admin Pages */
 $route['Admin'] = 'Admin';
 $route['Admin/Dashboard'] = 'Admin_Dashboard';
+$route['Admin/Business'] = 'Admin_Business';
+$route['Admin/Services'] = 'Admin_Services';
+
 $route['Admin/Users'] = 'Admin_Users';
 $route['Admin/Contacts'] = 'Admin_Contacts';
 $route['Admin/profile'] = 'Admin_Dashboard/profile';

@@ -30,25 +30,28 @@
           <i class="fa fa-dashboard"></i> <span>Dashboard</span>
         </a>
       </li>
-      <li><a href="<?=base_url(); ?>Admin/Users"><i class="fa fa-users"></i>Users Management</a></li>
-      <li><a href="<?=base_url(); ?>Admin/Contacts"><i class="fa fa-user-plus"></i>Contact Requests </a></li>
-      <li><a href="<?=base_url(); ?>Admin/Blogs"><i class="fa fa-newspaper-o"></i>Blogs Management</a></li>
-      <li><a href="<?=base_url(); ?>Admin/Plans"><i class="fa fa-tasks"></i>Plans Management</a></li>
       <li class="treeview">
         <a href="#">
-          <i class="fa fa-music"></i><span> Music Management </span>
+          <i class="fa fa-circle-o"></i><span> Pages Management </span>
           <span class="pull-right-container">
             <i class="fa fa-angle-left pull-right"></i>
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="<?=base_url();?>Admin/Categories"><i class="fa fa-circle-o"></i>Categories Management</a></li>
+          <li><a href="<?=base_url();?>Admin/Business"><i class="fa fa-address-card"></i>Business Details</a></li>
+          <li><a href="<?=base_url();?>Admin/Services"><i class="fa fa-circle-o"></i>Services Management</a></li>
           <li><a href="<?=base_url();?>Admin-Collections"><i class="fa fa-circle-o"></i>Collections Management</a></li>
           <li style="display:none;"><a href="<?=base_url();?>Admin-Sound" ><i class="fa fa-circle-o"></i>Sound Management</a></li>
         </ul>
       </li>
+      <!--
+      <li><a href="<?=base_url(); ?>Admin/Users"><i class="fa fa-users"></i>Users Management</a></li>
+      <li><a href="<?=base_url(); ?>Admin/Contacts"><i class="fa fa-user-plus"></i>Contact Requests </a></li>
+      <li><a href="<?=base_url(); ?>Admin/Blogs"><i class="fa fa-newspaper-o"></i>Blogs Management</a></li>
+      <li><a href="<?=base_url(); ?>Admin/Plans"><i class="fa fa-tasks"></i>Plans Management</a></li>
 
       <li><a href="<?=base_url(); ?>Admin-Banners"><i class="fa fa-picture-o"></i>Banner Management</a></li>
+      -->
     </ul>
   </section>
   <!-- /.sidebar -->
