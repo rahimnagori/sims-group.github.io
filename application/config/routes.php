@@ -64,6 +64,7 @@ $route['Carpenter-Details'] = 'Home/carpenter_details';
 $route['Fire-Details'] = 'Home/fire_details';
 $route['About'] = 'Home/about';
 $route['Services'] = 'Home/services';
+$route['Service/(:any)'] = 'Home/service/$1';
 
 
 $route['Community'] = 'Home/community';

@@ -93,6 +93,31 @@ class Home extends CI_Controller {
     $this->load->view('site/include/services', $pageData);
     $this->load->view('site/include/footer', $pageData);
   }
+
+  public function service($id){
+    if($id == 5){
+      $this->covid_details();
+    }
+    if($id == 6){
+      $this->electrical_details();
+    }
+    if($id == 7){
+      $this->transformer_details();
+    }
+    if($id == 8){
+      $this->panel_details();
+    }
+    if($id == 9){
+      $this->furniture_details();
+    }
+    if($id == 10){
+      $this->carpenter_details();
+    }
+    if($id == 11){
+      $this->fire_details();
+    }
+    
+  }
   /* No need below this */
 
   public function community(){
