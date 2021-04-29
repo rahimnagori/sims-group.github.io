@@ -1,5 +1,3 @@
-<?php include_once('include/header.php'); ?>
-
 <section class="pad_top sec1" id="services">
   <div class="container">
     <div class="headding wow fadeInDown"  data-wow-delay="0.5s">
@@ -12,104 +10,24 @@
     </div>
     <div class="slidder2 wow fadeInLeft"  data-wow-delay="0.7s">
       <div class="owl-carousel owl-theme slider_arrrw" id="slider_galler2">
-        <div class="item">
-          <div class="box_us3">
-            <img src="<?=site_url('assets/site/img/');?>covid19.jpg">
-            <div class="box_us4">
-              <h4>Covid 19 Products</h4>
-              <p>
-                PPE Kit | Gloves | Masks | Sanitizers
-              </p>
-              <div class="red_more2">
-                <a href="Covid-Details" class="btn btn_theme">Read More</a>
+        <?php
+          foreach($services as $service){
+        ?>
+            <div class="item">
+              <div class="box_us3">
+                <img src="<?=site_url($service['service_image']);?>">
+                <div class="box_us4">
+                  <h4><?=$service['service_name'];?></h4>
+                  <?=$service['service_description'];?>
+                  <div class="red_more2">
+                    <a href="<?=site_url('Service/' .$service['id']);?>" class="btn btn_theme">Read More</a>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="box_us3">
-            <img src="<?=site_url('assets/site/img/');?>electrical.jpg">
-            <div class="box_us4">
-              <h4>Electrical work</h4>
-              <p>
-                We deals in Electrical Contracts and able to provide all the latest technologies and higher standard works.
-              </p>
-              <div class="red_more2">
-                <a href="Electrical-Details" class="btn btn_theme">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="box_us3">
-            <img src="<?=site_url('assets/site/img/');?>transformer.jpg">
-            <div class="box_us4">
-              <h4>Transformer Servicing</h4>
-              <p>
-                We deals in all types of transformer service on site. We do provide all type of transformer testing. 
-              </p>
-              <div class="red_more2">
-                <a href="<?=site_url();?>Transformer-Details" class="btn btn_theme">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="box_us3">
-            <img src="<?=site_url('assets/site/img/');?>panel.jpg">
-            <div class="box_us4">
-              <h4>HT & LT Panel</h4>
-              <p>
-                We deals in all type of HT & LT breaker on site service. Also we can take care of calibration with Transformer too.
-              </p>
-              <div class="red_more2">
-                <a href="<?=site_url();?>Panel-Details" class="btn btn_theme">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="box_us3">
-            <img src="<?=site_url('assets/site/img/');?>chair.jpg">
-            <div class="box_us4">
-              <h4>New Chair & Repairing Service</h4>
-              <p>
-                We deals in all type of LT breaker on site service.
-              </p>
-              <div class="red_more2">
-                <a href="<?=site_url();?>Furniture-Details" class="btn btn_theme">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="box_us3">
-            <img src="<?=site_url('assets/site/img/');?>carpenter.jpg">
-            <div class="box_us4">
-              <h4>Carpenter Service</h4>
-              <p>
-                We deals in all type of carpenter work at Industries, Corporate office and client's home.
-              </p>
-              <div class="red_more2">
-                <a href="<?=site_url();?>Carpenter-Details" class="btn btn_theme">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="box_us3">
-            <img src="<?=site_url('assets/site/img/');?>fire.png">
-            <div class="box_us4">
-              <h4>Fire Extinguisher</h4>
-              <p>
-                We deals in different types of Fire Extinguishers.
-              </p>
-              <div class="red_more2">
-                <a href="<?=site_url();?>Fire-Details" class="btn btn_theme">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <?php
+          }
+        ?>
       </div>
       <div class="red_more">
         <a href="http://simsgroup.co.in/brochure/SIMS_Services.pdf" class="btn btn_theme btn-lg" download >
@@ -265,8 +183,6 @@
     </div>
   </div>
 </section>
-
-<?php include_once('include/footer.php'); ?>
 
 <script type="text/javascript">
   new WOW().init();

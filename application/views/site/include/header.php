@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SIMS</title>
+    <title><?=$businessData['business_name'];?></title>
 
     <link href="<?=site_url('assets/site/css/');?>bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="<?=site_url('assets/site/css/');?>owl.carousel.min.css">
@@ -37,8 +37,8 @@
       <div class="mox_us">
          <div class="pull-left">
             <ul class="ul_set">
-               <li><a href="#"><i class="fa fa-envelope"></i> Infosimsdelhi@gmail.com</a></li>
-               <li><a href="#"><i class="fa fa-phone"></i> +91 9319313401</a></li>
+               <li><a href="#"><i class="fa fa-envelope"></i> <?=$businessData['business_email'];?></a></li>
+               <li><a href="#"><i class="fa fa-phone"></i> <?=$businessData['business_phone'];?></a></li>
             </ul>
          </div>
          <div class="pull-right">

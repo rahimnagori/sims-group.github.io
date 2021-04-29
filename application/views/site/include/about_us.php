@@ -1,5 +1,3 @@
-<?php include_once('include/header.php'); ?>
-
 <section class="sec_pad sec3" id="about_us">
   <div class="container">
     <div class="row">
@@ -36,5 +34,3 @@
     </div>
   </div>
 </section>
-
-<?php include_once('include/footer.php'); ?>

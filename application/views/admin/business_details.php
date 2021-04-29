@@ -49,6 +49,12 @@
                    <input type="email" class="form-control" name="business_email_1" placeholder="Business Secondary Email" value="<?=(!empty($businessDetails)) ? $businessDetails['business_email_1'] : '';?>">
                   </div>
                 </div>
+                <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label">Business Address</label>
+                  <div class="col-sm-10">
+                   <input type="text" class="form-control" name="business_address" placeholder="Business Address" value="<?=(!empty($businessDetails)) ? $businessDetails['business_address'] : '';?>">
+                  </div>
+                </div>
               </div>
               <div class="box-footer">
                <input type="hidden" name="id" value="<?=(!empty($businessDetails)) ? $businessDetails['id'] : '';?>">

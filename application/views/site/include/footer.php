@@ -7,10 +7,10 @@
             <i class="fa fa-envelope"></i>
             <h4>Email Address</h4>
             <p>
-              Infosimsdelhi@gmail.com
+              <?=$businessData['business_email'];?>
             </p>
             <p>
-              Services@simsgroup.co.in
+              <?=$businessData['business_email_1'];?>
             </p>
           </div>
         </div>
@@ -21,7 +21,7 @@
             <i class="fa fa-phone"></i>
             <h4>Phone Number</h4>
             <p>
-              +91 9319313401
+              <?=$businessData['business_phone'];?>
             </p>
           </div>
         </div>
@@ -32,7 +32,7 @@
             <i class="fa fa-map-marker"></i>
             <h4>Location</h4>
             <p>
-              First floor satyam shivam sundaram mandir sector 9, Rohini 110085
+              <?=$businessData['business_address'];?>
             </p>
           </div>
         </div>
@@ -46,7 +46,7 @@
       </ul>
     </div>
     <div class="coppy">
-      Copyright SIMS GROUP 0F COMPANY © 2020. All Rights Reserved. 
+      Copyright SIMS GROUP 0F COMPANY © <?=date('Y');?>. All Rights Reserved. 
     </div>
   </div>
 </footer>
@@ -63,7 +63,7 @@
 <script type="text/javascript">
   (function () {
     var options = {
-      whatsapp: "+91 9319313401", // WhatsApp number
+      whatsapp: "<?=$businessData['business_phone'];?>", // WhatsApp number
       call_to_action: "", // Call to action
       position: "right", // Position may be 'right' or 'left'
     };

@@ -25,24 +25,15 @@ class Home extends CI_Controller {
   }
 
   private function get_userdata(){
-    return [];
-    $userdata = [];
-    $user_id = $this->session->userdata('user_id');
-    if($user_id){
-      $userdata = $this->Common_Model->fetch_records('users', array('id' => $user_id), false, true);
-    }
-    $categories = $this->Common_Model->fetch_records('categories', array('parent_category' => 0));
+    $businessData = $this->Common_Model->fetch_records('business_details');
+    $businessData = $businessData[0];
 
-    $collections = $this->Common_Model->fetch_records('collections');
-
-    $is_playing = ($this->session->userdata('is_playing')) ? $this->session->userdata('is_playing') :0;
-
-    return array('userdata' => $userdata, 'categories' => $categories, 'collections' => $collections, 'is_playing' => $is_playing);
+    return array('businessData' => $businessData);
   }
 
   public function index(){
     $pageData = $this->get_userdata();
-    // $pageData['users'] = $this->Common_Model->fetch_records('users');
+    $pageData['services'] = $this->Common_Model->fetch_records('services', array('is_deleted' => 0));
     // $pageData['plans'] = $this->Common_Model->fetch_records('plans');
     // $pageData['banners'] = $this->Common_Model->fetch_records('home_banners');
     $this->load->view('site/index', $pageData);
@@ -90,12 +81,17 @@ class Home extends CI_Controller {
 
   public function about(){
     $pageData = $this->get_userdata();
-    $this->load->view('site/about_us', $pageData);
+    $this->load->view('site/include/header', $pageData);
+    $this->load->view('site/include/about_us', $pageData);
+    $this->load->view('site/include/footer', $pageData);
   }
 
   public function services(){
     $pageData = $this->get_userdata();
-    $this->load->view('site/services', $pageData);
+    $pageData['services'] = $this->Common_Model->fetch_records('services', array('is_deleted' => 0));
+    $this->load->view('site/include/header', $pageData);
+    $this->load->view('site/include/services', $pageData);
+    $this->load->view('site/include/footer', $pageData);
   }
   /* No need below this */
 
