@@ -40,7 +40,7 @@
         <ul class="treeview-menu">
           <li><a href="<?=base_url();?>Admin/Business"><i class="fa fa-address-card"></i>Business Details</a></li>
           <li><a href="<?=base_url();?>Admin/Services"><i class="fa fa-circle-o"></i>Services Management</a></li>
-          <li><a href="<?=base_url();?>Admin-Collections"><i class="fa fa-circle-o"></i>Collections Management</a></li>
+          <li style="display:none;"><a href="<?=base_url();?>Admin-Collections"><i class="fa fa-circle-o"></i>Collections Management</a></li>
           <li style="display:none;"><a href="<?=base_url();?>Admin-Sound" ><i class="fa fa-circle-o"></i>Sound Management</a></li>
         </ul>
       </li>

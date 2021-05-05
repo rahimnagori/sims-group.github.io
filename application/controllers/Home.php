@@ -95,28 +95,12 @@ class Home extends CI_Controller {
   }
 
   public function service($id){
-    if($id == 5){
-      $this->covid_details();
-    }
-    if($id == 6){
-      $this->electrical_details();
-    }
-    if($id == 7){
-      $this->transformer_details();
-    }
-    if($id == 8){
-      $this->panel_details();
-    }
-    if($id == 9){
-      $this->furniture_details();
-    }
-    if($id == 10){
-      $this->carpenter_details();
-    }
-    if($id == 11){
-      $this->fire_details();
-    }
-    
+    $pageData = $this->get_userdata();
+    $pageData['serviceDetails'] = $this->Common_Model->fetch_records('services', array('id' => $id, 'is_deleted' => 0), false, true);
+    $pageData['serviceImages'] = $this->Common_Model->fetch_records('service_images', array('service_id' => $id, 'is_deleted' => 0));
+    $pageData['serviceBrochures'] = $this->Common_Model->fetch_records('service_brochures', array('service_id' => $id, 'is_deleted' => 0));
+
+    $this->load->view('site/service_details', $pageData);
   }
   /* No need below this */
 

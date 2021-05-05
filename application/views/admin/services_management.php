@@ -70,7 +70,8 @@
                   <tr>
                     <th>S.NO.</th>
                     <th>Service Title</th>
-                    <th>Description</th>
+                    <th>Service Description</th>
+                    <th>Service Details</th>
                     <th>Service Image</th>
                     <th>Action</th>
                   </tr>
@@ -83,11 +84,14 @@
                         <td><?=$serialNumber + 1; ?></td>
                         <td><?=$service['service_name'];?></td>
                         <td><?=$service['service_description'];?></td>
+                        <td><?=substr(strip_tags($service['service_details']), 0, 100);?></td>
                         <td>
                           <img src="<?=site_url($service['service_image']);?>" width="100" >
                         </td>
                         <td>
+                          <a href="<?=site_url('Admin/Image/' .$service['id']);?>" type="button" class="btn btn-warning btn-xs"> Update Images </a>
                           <button type="button" onclick="get_service(<?=$service['id'];?>);" class="btn btn-info btn-xs"> Edit </button>
+                          <a href="<?=site_url('Admin/Brochures/' .$service['id']);?>" type="button" class="btn btn-warning btn-xs"> Update Brochures </a>
                           <button type="button" onclick="delete_service(<?=$service['id'];?>);" class="btn btn-danger btn-xs"> Delete </button>
                         </td>
                       </tr>
@@ -123,6 +127,11 @@
           <div class="form-group">
             <label> Service Description </label>
             <textarea class="form-control textarea" required name="service_description"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label> Service Details </label>
+            <textarea class="form-control textarea" required name="service_details"></textarea>
           </div>
 
           <div class="form-group" id="image_section" >
@@ -235,6 +244,7 @@
       },
       beforeSend: function () {
         tinymce.remove('.textarea-edit');
+        tinymce.remove('.textarea-edit-two');
         $("#edit-modal-body").html("");
         $('#editServiceModal').modal('show');
         $('#editServiceModal').addClass('text-center');
@@ -244,7 +254,8 @@
         $('#editServiceModal').removeClass('text-center');
         $("#edit-modal-body").html("");
         $("#edit-modal-body").html(response);
-        update_tiny();
+        update_tiny('textarea-edit');
+        update_tiny('textarea-edit-two');
       }
     })
   }
@@ -252,6 +263,7 @@
   function update_service(e){
     e.preventDefault();
     $("#edit-description").val();
+    $("#edit-details").val();
     $.ajax({
       type: "POST",
       dataType: 'JSON',
@@ -274,12 +286,12 @@
     })
   }
 
-  function update_tiny(){
+  function update_tiny(textarea_selector){
     tinymce.init({
       menubar: false,
       branding: false,
       statusbar: false,
-      selector: '.textarea-edit',
+      selector: '.' + textarea_selector,
       height: 200,
       plugins: [
         "advlist autolink lists link image charmap print preview anchor",

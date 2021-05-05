@@ -6,7 +6,12 @@
 
 <div class="form-group">
   <label> Service Description </label>
-  <textarea class="form-control textarea-edit" id="edit-description" required name="service_description" onkeyup="update_tiny();" ><?=$serviceDetails['service_description'];?></textarea>
+  <textarea class="form-control textarea-edit" id="edit-description" required name="service_description" ><?=$serviceDetails['service_description'];?></textarea>
+</div>
+
+<div class="form-group">
+  <label> Service Details </label>
+  <textarea class="form-control textarea-edit textarea-edit-two" id="edit-details" required name="service_details" ><?=$serviceDetails['service_details'];?></textarea>
 </div>
 
 <div class="form-group" id="edit_image_section" >
@@ -17,5 +22,3 @@
 </div>
 
 <div id="editResponseMessage"></div>
-
-<?php // include_once('include/tinymce.php');?>
