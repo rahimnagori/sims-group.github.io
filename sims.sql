@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.5
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Generation Time: May 05, 2021 at 11:18 AM
--- Server version: 10.4.14-MariaDB-cll-lve
--- PHP Version: 7.2.34
+-- Host: 127.0.0.1
+-- Generation Time: May 15, 2021 at 01:28 PM
+-- Server version: 10.4.17-MariaDB
+-- PHP Version: 8.0.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `u762160299_sims`
+-- Database: `sims`
 --
 
 -- --------------------------------------------------------
@@ -43,7 +42,7 @@ CREATE TABLE `admins` (
 --
 
 INSERT INTO `admins` (`id`, `email`, `password`, `type`, `name`, `last_login`, `is_logged_in`) VALUES
-(1, 'admin@gmail.com', '123456', 1, 'Super Admin', '2021-05-05 11:10:31', 0);
+(1, 'admin@gmail.com', '123456', 1, 'Super Admin', '2021-05-15 06:55:17', 1);
 
 -- --------------------------------------------------------
 
@@ -66,6 +65,29 @@ CREATE TABLE `business_details` (
 
 INSERT INTO `business_details` (`id`, `business_name`, `business_email`, `business_email_1`, `business_phone`, `business_address`) VALUES
 (1, 'SIMS Group', 'Infosimsdelhi@gmail.com', 'Services@simsgroup.co.in', '919319313401', 'First floor satyam shivam sundaram mandir sector 9, Rohini 110085');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contact_requests`
+--
+
+CREATE TABLE `contact_requests` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `phone` varchar(100) NOT NULL,
+  `query` text NOT NULL,
+  `is_replied` tinyint(2) NOT NULL DEFAULT 0,
+  `created` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `contact_requests`
+--
+
+INSERT INTO `contact_requests` (`id`, `name`, `email`, `phone`, `query`, `is_replied`, `created`) VALUES
+(1, 'Rahim', 'rahim.nagori@gmail.com', '94994949494', 'Test Message', 0, '2021-05-15 07:57:33');
 
 -- --------------------------------------------------------
 
@@ -193,6 +215,12 @@ ALTER TABLE `business_details`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `contact_requests`
+--
+ALTER TABLE `contact_requests`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `services`
 --
 ALTER TABLE `services`
@@ -224,6 +252,12 @@ ALTER TABLE `admins`
 -- AUTO_INCREMENT for table `business_details`
 --
 ALTER TABLE `business_details`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `contact_requests`
+--
+ALTER TABLE `contact_requests`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
