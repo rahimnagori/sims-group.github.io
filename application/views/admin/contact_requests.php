@@ -70,10 +70,12 @@
                 <thead>
                   <tr>
                     <th>S.NO.</th>
+                    <th>Name</th>
                     <th>Email</th>
                     <th>Phone</th>
                     <th>Message</th>
                     <th>Created</th>
+                    <th style="display:none;">Action</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -82,10 +84,15 @@
                   ?>
                       <tr>
                         <td><?=$serialNumber + 1; ?></td>
+                        <td><?=$row['name'];?></td>
                         <td><?=$row['email'];?></td>
                         <td><?=$row['phone'];?></td>
-                        <td><?=$row['message'];?></td>
+                        <td><?=$row['query'];?></td>
                         <td><?=date("d M Y", strtotime($row['created']));?></td>
+                        <td style="display:none;">
+                          <button class="btn btn-info">Reply</button>
+                          <button class="btn btn-danger">Delete</button>
+                        </td>
                       </tr>
                   <?php
                     }

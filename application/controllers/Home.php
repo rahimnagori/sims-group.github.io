@@ -102,6 +102,43 @@ class Home extends CI_Controller {
 
     $this->load->view('site/service_details', $pageData);
   }
+
+  public function request(){
+    $this->load->helper(array('form', 'url'));
+
+    $this->load->library('form_validation');
+    $this->form_validation->set_rules('name', 'name', 'required');
+    $this->form_validation->set_rules('email', 'Email', 'required');
+    $this->form_validation->set_rules('phone', 'phone', 'required');
+    $this->form_validation->set_rules('query', 'query', 'required');
+    if ($this->form_validation->run()){
+      $insert = $this->input->post();
+      $insert['created'] = date('Y-m-d H:i:s');
+      if($this->Common_Model->insert('contact_requests', $insert)){
+        $adminData = $this->Common_Model->fetch_records('business_details', array('id' => 1));
+        $adminData = $adminData[0];
+        $subject = 'New request received';
+        $this->Common_Model->send_mail_new($insert['email'], $subject, $insert['query']);
+
+        $responseClass = 'success';
+        $responseMessage = 'Request Sent Successfully.';
+      }
+    }else{
+      $responseClass = 'danger';
+      $responseMessage = validation_errors();
+    }
+    $formResponse = "<div class='row'>
+                  <div class='col-sm-12'>
+                    <div class='alert alert-$responseClass alert-dismissible'>
+          <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
+          $responseMessage
+        </div>
+      </div>
+    </div>";
+    $this->session->set_flashdata('formResponse', $formResponse);
+
+    redirect('Contact');
+  }
   /* No need below this */
 
   public function community(){

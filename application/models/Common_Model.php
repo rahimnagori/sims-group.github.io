@@ -132,7 +132,7 @@ class Common_Model extends CI_Model {
 
   public function send_mail_new($to, $subject, $body, $bcc = null, $attachment = false){
     $PROJECT = $this->config->item('PROJECT');
-    $fromEmail = 'info@bluediamond.com';
+    $fromEmail = 'info@simsgroup.co.in';
     $config = array();
     $config['mailtype'] = "html";
     $config['charset'] = "utf-8";
@@ -156,6 +156,7 @@ class Common_Model extends CI_Model {
     $pageData['PROJECT'] = $PROJECT;
     $msg = $this->load->view('site/include/email_template', $pageData, true);
     // $this->load->view('site/include/email_template', $pageData); /* Debug */
+    // die;
 
     if($attachment){
       $this->email->attach($attachment);

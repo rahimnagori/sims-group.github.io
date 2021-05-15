@@ -65,6 +65,7 @@ $route['Fire-Details'] = 'Home/fire_details';
 $route['About'] = 'Home/about';
 $route['Services'] = 'Home/services';
 $route['Service/(:any)'] = 'Home/service/$1';
+$route['Request'] = 'Home/request';
 
 
 $route['Community'] = 'Home/community';
@@ -98,15 +99,15 @@ $route['Admin/Business'] = 'Admin_Business';
 $route['Admin/Services'] = 'Admin_Services';
 $route['Admin/Image/(:any)'] = 'Admin_Services/Image/$1';
 $route['Admin/Brochures/(:any)'] = 'Admin_Services/Brochure/$1';
-
-$route['Admin/Users'] = 'Admin_Users';
 $route['Admin/Contacts'] = 'Admin_Contacts';
 $route['Admin/profile'] = 'Admin_Dashboard/profile';
+$route['Admin/Logout'] = 'Admin/logout';
+
+
+$route['Admin/Users'] = 'Admin_Users';
 $route['Admin/Blogs'] = 'Admin_Blogs';
 $route['Admin/Categories'] = 'Admin_Categories';
 $route['Admin/Plans'] = 'Admin_Plans';
 $route['Admin-Sound'] = 'Admin_Sound';
 $route['Admin-Collections'] = 'Admin_Collections';
 $route['Admin-Banners'] = 'Admin_Banners';
-$route['Admin/Logout'] = 'Admin/logout';
-// $route['Test'] = 'Test';
